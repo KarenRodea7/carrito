@@ -9,7 +9,7 @@
 <body>
     <header class="encabezado">
         <div>
-            <button id="menu">MENÚ</button>
+            <button class="btnenc" id="menu">MENÚ</button>
         </div>
         <div id="foto">
             <img src="imagenes/icono_persona2.jpg" alt="Imagen de encabezado" class="imagen">
@@ -28,6 +28,10 @@
         <main class="contenido">
             <h1>Carrito de Compras</h1><br><br>
             <div id="carrito" class="conten_flex"></div>
+            <div id="total">
+                <p>Total: $<span id="totalPrecio">0</span></p>
+            </div>
+            <button onclick="pagar()">Pagar</button>
             <button onclick="vaciarCarrito()">Vaciar Carrito</button>
         </main>
     </div>

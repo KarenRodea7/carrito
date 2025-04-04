@@ -34,7 +34,7 @@ ul {
     object-fit: contain;
 }
 
-#menu {
+.btnenc {
     position: flex; /* Lo mantiene siempre visible en la pantalla */
     top: 10px;
     left: 75px;
@@ -150,4 +150,48 @@ li {
 
 li:hover .categor {
     display: block;
+}
+
+.prod {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.agregar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.agregar:hover {
+    background-color: #45a049;
+}
+
+#carrito {
+    display: flex;
+    flex-direction: column;
+}
+
+#total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }

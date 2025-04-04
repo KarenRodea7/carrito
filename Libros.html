@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylo.css">
-    <title>Document</title>
+    <title>Libros</title>
 </head>
 <body>
     <header class="encabezado">
@@ -33,53 +33,16 @@
         </div>
         <main class="contenido">
             <h1>Libros</h1><br><br>
-            <div class="conten_flex">
-                <div class="prod" data-id="1" data-nombre="Caja de Trufas Variadas" data-precio="300">
-                    <h4>Caja de Trufas Variadas</h4>
-                    <div>
-                        <img src="imagenes/caja_trufas.png" class="imagen">
-                    </div>
-                    <p>$ 300.00</p>
-                    <button class="agregar">Agregar al carrito</button>
-                    
-                </div>
-                <div class="prod" data-id="2" data-nombre="Caja de Trufas Variadas" data-precio="300">
-                    <h4>Caja de Trufas Variadas</h4>
-                    <div>
-                        <img src="imagenes/caja_trufas.png" class="imagen">
-                    </div>
-                    <p>$ 300.00</p>
-                    <button class="agregar">Agregar al carrito</button>
-                </div>
-                <div class="prod" data-id="3" data-nombre="Caja de Trufas Variadas" data-precio="300">
-                    <h4>Caja de Trufas Variadas</h4>
-                    <div>
-                        <img src="imagenes/caja_trufas.png" class="imagen">
-                    </div>
-                    <p>$ 300.00</p>
-                    <button class="agregar">Agregar al carrito</button>
-                </div>
-                <div class="prod" data-id="3" data-nombre="Caja de Trufas Variadas" data-precio="300">
-                    <h4>Caja de Trufas Variadas</h4>
-                    <div>
-                        <img src="imagenes/caja_trufas.png" class="imagen">
-                    </div>
-                    <p>$ 300.00</p>
-                    <button class="agregar">Agregar al carrito</button>
-                </div>
-                <div class="prod" data-id="3" data-nombre="Caja de Trufas Variadas" data-precio="300">
-                    <h4>Caja de Trufas Variadas</h4>
-                    <div>
-                        <img src="imagenes/caja_trufas.png" class="imagen">
-                    </div>
-                    <p>$ 300.00</p>
-                    <button class="agregar">Agregar al carrito</button>
-                </div>
-            </div>
+            <div class="conten_flex" id="lista-productos"></div>
         </main>
         
     </div>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            cargarPorCategoria("Libros");
+        });
+    </script>
 </body>
 </html>
