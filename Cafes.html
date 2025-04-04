@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="encabezado">
+        <div>
+            <button id="menu">MENÚ</button>
+        </div>
+        <div id="foto">
+            <img src="imagenes/icono_persona2.jpg" alt="Imagen de encabezado" class="imagen">
+        </div>
+    </header>
+    
+    <div class="contenedor" id="contenedor">
+        <div class="desp" id="desp">
+            <ul>
+                <li><a class="active" href="Ord_SitioWeb.html">Inicio</a></li>
+                <li><a href="#categ">Categorías</a>
+                    <div class="categor">
+                        <a href="#">Cafés</a>
+                        <a href="Postres.html">Postres</a>
+                        <a href="Libros.html">Libros</a>
+                    </div>
+                </li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+        </div>
+        <main class="contenido">
+            <h1>Cafés</h1><br><br>
+            <div class="conten_flex">
+                <div class="prod" data-id="c1" data-nombre="Café Chiapas – Tueste Claro" data-precio="300">
+                    <h4>Café Chiapas – Tueste Claro</h4>
+                    <div>
+                        <img src="imagenes/caja_trufas.png" class="imagen">
+                    </div>
+                    <p>$ 300.00</p>
+                    <button class="agregar">Agregar al carrito</button>
+                    
+                </div>
+                <div class="prod" data-id="c2" data-nombre="Caja de Trufas Variadas" data-precio="300">
+                    <h4>Caja de Trufas Variadas</h4>
+                    <div>
+                        <img src="imagenes/caja_trufas.png" class="imagen">
+                    </div>
+                    <p>$ 300.00</p>
+                    <button class="agregar">Agregar al carrito</button>
+                </div>
+                <div class="prod" data-id="c3" data-nombre="Caja de Trufas Variadas" data-precio="300">
+                    <h4>Caja de Trufas Variadas</h4>
+                    <div>
+                        <img src="imagenes/caja_trufas.png" class="imagen">
+                    </div>
+                    <p>$ 300.00</p>
+                    <button class="agregar">Agregar al carrito</button>
+                </div>
+                <div class="prod" data-id="c4" data-nombre="Caja de Trufas Variadas" data-precio="300">
+                    <h4>Caja de Trufas Variadas</h4>
+                    <div>
+                        <img src="imagenes/caja_trufas.png" class="imagen">
+                    </div>
+                    <p>$ 300.00</p>
+                    <button class="agregar">Agregar al carrito</button>
+                </div>
+                <div class="prod" data-id="c5" data-nombre="Caja de Trufas Variadas" data-precio="300">
+                    <h4>Caja de Trufas Variadas</h4>
+                    <div>
+                        <img src="imagenes/caja_trufas.png" class="imagen">
+                    </div>
+                    <p>$ 300.00</p>
+                    <button class="agregar">Agregar al carrito</button>
+                </div>
+            </div>
+        </main>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

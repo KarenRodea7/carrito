@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="encabezado">
+        <div>
+            <button id="menu">MENÚ</button>
+        </div>
+        <div id="foto">
+            <img src="imagenes/icono_persona2.jpg" alt="Imagen de encabezado" class="imagen">
+        </div>
+    </header>
+    
+    <div class="contenedor" id="contenedor">
+        <div class="desp" id="desp">
+            <ul>
+                <li><a href="Ord_SitioWeb.html">Inicio</a></li>
+                <li><a href="Cafes.html">Cafés</a></li>
+                <li><a href="Postres.html">Postres</a></li>
+                <li><a href="Libros.html">Libros</a></li>
+            </ul>
+        </div>
+        <main class="contenido">
+            <h1>Carrito de Compras</h1><br><br>
+            <div id="carrito" class="conten_flex"></div>
+            <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        </main>
+    </div>
+</body>
+</html>
