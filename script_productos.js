@@ -36,11 +36,13 @@ function cargarProductos(filtro = "", categoria = "") {
             <img src="${producto.imagen}" class="imagen" alt="${producto.nombre}">
             <p>$ ${producto.precio}</p>
             <button class="agregar" data-id="${producto.id}" data-nombre="${producto.nombre}" data-precio="${producto.precio}">Agregar al carrito</button>
+            <button class="ver-detalles" data-id="${producto.id}">Ver detalles</button>
         `;
         contenedor.appendChild(productoDiv);
     });
 
     asignarEventosBotones();
+    asignarEventosDetalles();
 }
 
 // Función para filtrar por categoría
@@ -126,4 +128,14 @@ function pagar() {
         alert(`Total de la compra: $${total.toFixed(2)}. ¡Gracias por tu compra!`);
         vaciarCarrito();
     }
+}
+
+function asignarEventosDetalles() {
+    document.querySelectorAll('.ver-detalles').forEach(boton => {
+        boton.addEventListener("click", function () {
+            let idProducto = this.getAttribute("data-id");
+            localStorage.setItem("productoDetalles", idProducto);
+            window.location.href = "detalles.html";
+        });
+    });
 }
