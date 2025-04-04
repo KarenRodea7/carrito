@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylo.css">
-    <title>Document</title>
+    <title>Carrito</title>
 </head>
 <body>
     <header class="encabezado">
@@ -19,10 +19,14 @@
     <div class="contenedor" id="contenedor">
         <div class="desp" id="desp">
             <ul>
-                <li><a href="Ord_SitioWeb.html">Inicio</a></li>
-                <li><a href="Cafes.html">Cafés</a></li>
-                <li><a href="Postres.html">Postres</a></li>
-                <li><a href="Libros.html">Libros</a></li>
+                <li><a class="active" href="Ord_SitioWeb.html">Inicio</a></li>
+                <li><a href="#categ">Categorías</a>
+                    <div class="categor">
+                        <a href="Cafes.html">Cafés</a>
+                        <a href="Postres.html">Postres</a>
+                        <a href="Libros.html">Libros</a>
+                    </div>
+                </li>
             </ul>
         </div>
         <main class="contenido">
@@ -35,5 +39,9 @@
             <button onclick="vaciarCarrito()">Vaciar Carrito</button>
         </main>
     </div>
+
+    <script src="productos.js"></script>
+    <script src="script.js"></script>
+    <script src="script_productos.js"></script>
 </body>
 </html>

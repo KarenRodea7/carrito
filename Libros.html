@@ -9,7 +9,12 @@
 <body>
     <header class="encabezado">
         <div>
-            <button id="menu">MENÚ</button>
+            <button class="btnenc" id="menu">MENÚ</button>
+        </div>
+        <div>
+            <a href="carrito.html">
+                <button class="btnenc" id="carrito">CARRITO</button>
+              </a>              
         </div>
         <div id="foto">
             <img src="imagenes/icono_persona2.jpg" alt="Imagen de encabezado" class="imagen">
@@ -27,8 +32,6 @@
                         <a href="#">Libros</a>
                     </div>
                 </li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
             </ul>
         </div>
         <main class="contenido">
@@ -38,7 +41,9 @@
         
     </div>
 
+    <script src="productos.js"></script>
     <script src="script.js"></script>
+    <script src="script_productos.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             cargarPorCategoria("Libros");
